@@ -152,9 +152,9 @@ class REIT:
         res = dict()
         res['今年分红率'] = f'{curr_dividend * 100. / curr_price:.2f}%'
         res['去年分红率'] = f'{last_dividend * 100. / curr_price:.2f}%'  # 以当前价格去年股息估计去年股息
-        res['今年分红'] = curr_dividend
+        res['今年分红'] = f"{curr_dividend:.4f}"
         res['今年分红次数'] = len(dates_curr)
-        res['去年分红'] = last_dividend
+        res['去年分红'] = f"{last_dividend:.4f}"
         res['去年分红次数'] = len(dates_last)
 
         # print(res)
